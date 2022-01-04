@@ -1,4 +1,4 @@
-package net.capturecoop;
+package net.capturecoop.ccmathutils;
 
 public class CCMathUtils {
     public static boolean isInteger(String string) {

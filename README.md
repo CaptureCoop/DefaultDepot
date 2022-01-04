@@ -6,14 +6,14 @@ Math Utils library
 build.gradle:
 ```
 dependencies {
-    implementation 'net.capturecoop:CCMathUtils:VERSION'
+    implementation 'net.capturecoop.ccmathutils:CCMathUtils:VERSION'
 }
 ```
 settings.gradle:
 ```
 sourceControl {
     gitRepository("https://github.com/CaptureCoop/CCMathUtils.git") {
-        producesModule("net.capturecoop:CCMathUtils")
+        producesModule("net.capturecoop.ccmathutils:CCMathUtils")
     }
 }
 ```
