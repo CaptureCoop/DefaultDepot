@@ -6,14 +6,14 @@ Multi purpose library
 build.gradle:
 ```
 dependencies {
-    implementation 'net.capturecoop.ccutils:ccutils:VERSION'
+    implementation 'net.capturecoop:ccutils:VERSION'
 }
 ```
 settings.gradle:
 ```
 sourceControl {
     gitRepository("https://github.com/CaptureCoop/CCUtils.git") {
-        producesModule("net.capturecoop.ccutils:ccutils")
+        producesModule("net.capturecoop:ccutils")
     }
 }
 ```
