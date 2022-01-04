@@ -1,24 +1,24 @@
-package net.capturecoop.ccmathutils;
+package net.capturecoop.ccutils;
 
-import net.capturecoop.ccmathutils.CCMathUtils;
-import net.capturecoop.ccmathutils.Vector2Float;
-import net.capturecoop.ccmathutils.Vector2Int;
+import net.capturecoop.ccutils.math.MathUtils;
+import net.capturecoop.ccutils.math.Vector2Float;
+import net.capturecoop.ccutils.math.Vector2Int;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class Tests {
+public class MathTests {
     @Test
     public void tests() {
-        //CCMathUtils
-        assertTrue(CCMathUtils.isDouble("2.0"));
-        assertFalse(CCMathUtils.isDouble("Text"));
-        assertFalse(CCMathUtils.isDouble("2.0Text"));
+        //MathUtils
+        assertTrue(MathUtils.isDouble("2.0"));
+        assertFalse(MathUtils.isDouble("Text"));
+        assertFalse(MathUtils.isDouble("2.0Text"));
 
-        assertTrue(CCMathUtils.isInteger("2"));
-        assertFalse(CCMathUtils.isInteger("2.0"));
-        assertFalse(CCMathUtils.isInteger("Text"));
-        assertFalse(CCMathUtils.isInteger("2Text"));
+        assertTrue(MathUtils.isInteger("2"));
+        assertFalse(MathUtils.isInteger("2.0"));
+        assertFalse(MathUtils.isInteger("Text"));
+        assertFalse(MathUtils.isInteger("2Text"));
 
         //Vector2Int
         Vector2Int vec2int1 = new Vector2Int(5, 10);

@@ -1,6 +1,6 @@
-package net.capturecoop.ccmathutils;
+package net.capturecoop.ccutils.math;
 
-public class CCMathUtils {
+public class MathUtils {
     public static boolean isInteger(String string) {
         try {
             Integer.valueOf(string);
