@@ -1,6 +1,6 @@
 package org.capturecoop.ccutils;
 
-import org.capturecoop.ccutils.math.MathUtils;
+import org.capturecoop.utils.MathUtils;
 import org.capturecoop.ccutils.math.Vector2Float;
 import org.capturecoop.ccutils.math.Vector2Int;
 import org.junit.jupiter.api.Test;
