@@ -1,8 +1,8 @@
-package net.capturecoop.ccutils;
+package org.capturecoop.ccutils;
 
-import net.capturecoop.ccutils.math.MathUtils;
-import net.capturecoop.ccutils.math.Vector2Float;
-import net.capturecoop.ccutils.math.Vector2Int;
+import org.capturecoop.ccutils.math.MathUtils;
+import org.capturecoop.ccutils.math.Vector2Float;
+import org.capturecoop.ccutils.math.Vector2Int;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,4 +1,4 @@
-package net.capturecoop.ccutils.math;
+package org.capturecoop.ccutils.math;
 
 import java.awt.Point;
 

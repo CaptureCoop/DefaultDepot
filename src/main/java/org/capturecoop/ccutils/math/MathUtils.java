@@ -1,4 +1,4 @@
-package net.capturecoop.ccutils.math;
+package org.capturecoop.ccutils.math;
 
 public class MathUtils {
     public static boolean isInteger(String string) {
