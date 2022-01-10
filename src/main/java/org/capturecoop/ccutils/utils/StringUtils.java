@@ -1,4 +1,4 @@
-package org.capturecoop.utils;
+package org.capturecoop.ccutils.utils;
 
 import org.apache.commons.lang3.RandomStringUtils;
 
