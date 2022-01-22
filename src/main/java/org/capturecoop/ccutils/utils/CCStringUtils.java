@@ -5,7 +5,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 import java.io.File;
 import java.time.LocalDateTime;
 
-public class StringUtils {
+public class CCStringUtils {
     public static String removeWhitespace(String string) {
         return string.replaceAll("\\s+","");
     }

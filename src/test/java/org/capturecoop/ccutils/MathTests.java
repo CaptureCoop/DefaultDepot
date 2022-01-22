@@ -1,6 +1,6 @@
 package org.capturecoop.ccutils;
 
-import org.capturecoop.ccutils.utils.MathUtils;
+import org.capturecoop.ccutils.utils.CCMathUtils;
 import org.capturecoop.ccutils.math.Vector2Float;
 import org.capturecoop.ccutils.math.Vector2Int;
 import org.junit.jupiter.api.Test;
@@ -11,14 +11,14 @@ public class MathTests {
     @Test
     public void tests() {
         //MathUtils
-        assertTrue(MathUtils.isDouble("2.0"));
-        assertFalse(MathUtils.isDouble("Text"));
-        assertFalse(MathUtils.isDouble("2.0Text"));
+        assertTrue(CCMathUtils.isDouble("2.0"));
+        assertFalse(CCMathUtils.isDouble("Text"));
+        assertFalse(CCMathUtils.isDouble("2.0Text"));
 
-        assertTrue(MathUtils.isInteger("2"));
-        assertFalse(MathUtils.isInteger("2.0"));
-        assertFalse(MathUtils.isInteger("Text"));
-        assertFalse(MathUtils.isInteger("2Text"));
+        assertTrue(CCMathUtils.isInteger("2"));
+        assertFalse(CCMathUtils.isInteger("2.0"));
+        assertFalse(CCMathUtils.isInteger("Text"));
+        assertFalse(CCMathUtils.isInteger("2Text"));
 
         //Vector2Int
         Vector2Int vec2int1 = new Vector2Int(5, 10);

@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 
-public class LinkUtils {
+public class CCLinkUtils {
     public static URI getURI(String link) {
         try {
             return new URI(link);

@@ -1,6 +1,6 @@
 package org.capturecoop.ccutils.utils;
 
-public class MathUtils {
+public class CCMathUtils {
     public static boolean isInteger(String string) {
         try {
             Integer.valueOf(string);
