@@ -1,5 +1,6 @@
 package org.capturecoop.ccutils.math;
 
+import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.capturecoop.ccutils.utils.CCStringUtils;
 
 import java.awt.Point;
@@ -98,7 +99,24 @@ public class CCVector2Float {
         return new Point((int)x, (int)y);
     }
 
+    @Override
     public String toString() {
         return CCStringUtils.format("Vector2Float[%c, %c]", x, y);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if(this == o)
+            return true;
+
+        if(o == null || getClass() != o.getClass())
+            return false;
+
+        CCVector2Float other = (CCVector2Float) o;
+
+        return new EqualsBuilder()
+                .append(x, other.x)
+                .append(y, other.y)
+                .isEquals();
     }
 }
