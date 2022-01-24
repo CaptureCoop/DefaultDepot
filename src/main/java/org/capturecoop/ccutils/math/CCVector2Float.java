@@ -1,5 +1,7 @@
 package org.capturecoop.ccutils.math;
 
+import org.capturecoop.ccutils.utils.CCStringUtils;
+
 import java.awt.Point;
 
 public class CCVector2Float {
@@ -97,6 +99,6 @@ public class CCVector2Float {
     }
 
     public String toString() {
-        return "Vector2Float(" + x + "/" + y + ")";
+        return CCStringUtils.format("Vector2Float[%c, %c]", x, y);
     }
 }

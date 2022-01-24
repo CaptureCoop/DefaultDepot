@@ -1,5 +1,7 @@
 package org.capturecoop.ccutils.math;
 
+import org.capturecoop.ccutils.utils.CCStringUtils;
+
 import java.awt.Point;
 
 public class CCVector2Int {
@@ -27,8 +29,8 @@ public class CCVector2Int {
     }
 
     public CCVector2Int(Point point) {
-        x = (int) point.getX();
-        y = (int) point.getY();
+        x = point.x;
+        y = point.y;
     }
 
     public CCVector2Int(double x, double y) {
@@ -97,6 +99,6 @@ public class CCVector2Int {
     }
 
     public String toString() {
-        return "Vector2Int(" + x + "/" + y + ")";
+        return CCStringUtils.format("Vector2Int[%c, %c]", x, y);
     }
 }
