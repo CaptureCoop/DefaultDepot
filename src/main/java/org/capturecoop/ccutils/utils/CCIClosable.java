@@ -1,5 +1,5 @@
 package org.capturecoop.ccutils.utils;
 
-public interface ICCClosable {
+public interface CCIClosable {
     void close();
 }
