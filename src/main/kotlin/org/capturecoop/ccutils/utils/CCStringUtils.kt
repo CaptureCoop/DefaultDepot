@@ -1,4 +1,4 @@
-package org.capturecoop.ccutils
+package org.capturecoop.ccutils.utils
 
 import org.apache.commons.lang3.RandomStringUtils
 import org.apache.commons.lang3.StringUtils

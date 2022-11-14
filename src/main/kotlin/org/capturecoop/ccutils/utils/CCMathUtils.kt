@@ -1,4 +1,4 @@
-package org.capturecoop.ccutils
+package org.capturecoop.ccutils.utils
 
 import kotlin.math.min
 import kotlin.math.max

@@ -1,4 +1,4 @@
-package org.capturecoop.ccutils
+package org.capturecoop.ccutils.utils
 
 interface CCIClosable {
     fun close()
