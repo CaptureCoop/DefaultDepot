@@ -31,7 +31,7 @@ class CCVector2Int(var x: Int = 0, var y: Int = 0) {
     //operator fun plusAssign(other: CCVector2Int) = kotlin.run { x += other.x; y += other.y }
     //operator fun minusAssign(other: CCVector2Int) = kotlin.run { x -= other.x; y -= other.y }
 
-    override fun toString() = "CCVector2Int[%c, %c]"
+    override fun toString() = "CCVector2Int[$x, $y]"
     override fun equals(other: Any?) = if(other is CCVector2Int) x == other.x && y == other.y else false
     override fun hashCode() = 31 * x + y
 }
@@ -64,7 +64,7 @@ class CCVector2Float(var x: Float = 0.0F, var y: Float = 0.0F) {
     //operator fun plusAssign(other: CCVector2Float) = kotlin.run { x += other.x; y += other.y }
     //operator fun minusAssign(other: CCVector2Float) = kotlin.run { x -= other.x; y -= other.y }
 
-    override fun toString() = "CCVector2Float[%c, %c]"
+    override fun toString() = "CCVector2Float[$x, $y]"
     override fun equals(other: Any?) = if(other is CCVector2Float) x == other.x && y == other.y else false
     override fun hashCode() = (31 * x + y).toInt()
 }
