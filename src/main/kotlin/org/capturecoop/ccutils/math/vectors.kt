@@ -5,6 +5,7 @@ import java.awt.Point
 
 class CCVector2Int(var x: Int = 0, var y: Int = 0) {
     constructor(vector: CCVector2Int): this(vector.x, vector.y)
+    constructor(vector: CCVector2Float): this(vector.x, vector.y)
     constructor(point: Point): this(point.x, point.y)
     constructor(x: Double, y: Double): this(x.toInt(), y.toInt())
     constructor(x: Float, y: Float): this(x.toInt(), y.toInt())
@@ -37,6 +38,7 @@ class CCVector2Int(var x: Int = 0, var y: Int = 0) {
 
 class CCVector2Float(var x: Float = 0.0F, var y: Float = 0.0F) {
     constructor(vector: CCVector2Float): this(vector.x, vector.y)
+    constructor(vector: CCVector2Int): this(vector.x, vector.y)
     constructor(point: Point): this(point.x.toFloat(), point.y.toFloat())
     constructor(x: Double, y: Double): this(x.toFloat(), y.toFloat())
     constructor(x: Int, y: Int): this(x.toFloat(), y.toFloat())
