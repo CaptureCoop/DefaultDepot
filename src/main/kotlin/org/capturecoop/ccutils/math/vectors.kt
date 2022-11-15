@@ -7,6 +7,7 @@ class CCVector2Int(var x: Int = 0, var y: Int = 0) {
     constructor(vector: CCVector2Int): this(vector.x, vector.y)
     constructor(point: Point): this(point.x, point.y)
     constructor(x: Double, y: Double): this(x.toInt(), y.toInt())
+    constructor(x: Float, y: Float): this(x.toInt(), y.toInt())
 
     fun limitX(min: Int, max: Int): CCVector2Int {
         x = CCMathUtils.clamp(x, min, max)
@@ -28,8 +29,6 @@ class CCVector2Int(var x: Int = 0, var y: Int = 0) {
 
     operator fun plus(other: CCVector2Int) = CCVector2Int(x + other.x, y + other.y)
     operator fun minus(other: CCVector2Int) = CCVector2Int(x - other.x, y - other.y)
-    //operator fun plusAssign(other: CCVector2Int) = kotlin.run { x += other.x; y += other.y }
-    //operator fun minusAssign(other: CCVector2Int) = kotlin.run { x -= other.x; y -= other.y }
 
     override fun toString() = "CCVector2Int[$x, $y]"
     override fun equals(other: Any?) = if(other is CCVector2Int) x == other.x && y == other.y else false
@@ -40,6 +39,7 @@ class CCVector2Float(var x: Float = 0.0F, var y: Float = 0.0F) {
     constructor(vector: CCVector2Float): this(vector.x, vector.y)
     constructor(point: Point): this(point.x.toFloat(), point.y.toFloat())
     constructor(x: Double, y: Double): this(x.toFloat(), y.toFloat())
+    constructor(x: Int, y: Int): this(x.toFloat(), y.toFloat())
 
     fun limitX(min: Float, max: Float): CCVector2Float {
         x = CCMathUtils.clamp(x, min, max)
@@ -61,8 +61,6 @@ class CCVector2Float(var x: Float = 0.0F, var y: Float = 0.0F) {
 
     operator fun plus(other: CCVector2Float) = CCVector2Float(x + other.x, y + other.y)
     operator fun minus(other: CCVector2Float) = CCVector2Float(x - other.x, y - other.y)
-    //operator fun plusAssign(other: CCVector2Float) = kotlin.run { x += other.x; y += other.y }
-    //operator fun minusAssign(other: CCVector2Float) = kotlin.run { x -= other.x; y -= other.y }
 
     override fun toString() = "CCVector2Float[$x, $y]"
     override fun equals(other: Any?) = if(other is CCVector2Float) x == other.x && y == other.y else false
