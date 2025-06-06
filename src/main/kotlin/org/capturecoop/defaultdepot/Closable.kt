@@ -1,4 +1,4 @@
-package org.capturecoop.utils.org.capturecoop.defaultdepot
+package org.capturecoop.defaultdepot
 
 interface Closable {
     fun close()
