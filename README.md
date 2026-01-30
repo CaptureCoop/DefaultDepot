@@ -1,27 +1,15 @@
-# CCUtils
+# DefaultDepot
 Multi purpose library
 
 ## How to use with Gradle:
 
-build.gradle:
-```
-dependencies {
-    implementation 'org.capturecoop:CCUtils:VERSION'
-}
-```
-settings.gradle:
-```
-sourceControl {
-    gitRepository("https://github.com/CaptureCoop/CCUtils.git") {
-        producesModule("org.capturecoop:CCUtils")
-    }
-}
-```
+Coming soon
 
+## License
 
 MIT License
 
-Copyright (c) 2022 CaptureCoop.org
+Copyright (c) 2026 CaptureCoop.org
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
