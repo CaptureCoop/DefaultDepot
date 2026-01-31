@@ -1,2 +1,2 @@
-rootProject.name = "CCUtils"
+rootProject.name = "DefaultDepot"
 
