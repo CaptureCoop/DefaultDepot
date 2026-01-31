@@ -1,9 +1,14 @@
 # DefaultDepot
 Multi purpose library
 
-## How to use with Gradle:
+## How to use
 
-Coming soon
+Available on [Maven Central](https://central.sonatype.com/artifact/org.capturecoop/defaultdepot)
+
+Gradle:
+````
+implementation("org.capturecoop:defaultdepot:{version}")
+````
 
 ## License
 
